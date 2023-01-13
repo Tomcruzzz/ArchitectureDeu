@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHITECTURE DEU</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul> 
+        </nav>
+        <div class="header-text">
+            <p>Architectural Designer</p>
+            <h1>Ar.<span> Alen Joseph James</span><br> from Kerala,India </h1>
+
+        </div>
+    </div>
+  </div>  
+
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about.jpg">
+                
+            </div>
+            <div class="about-col-2">
+                <h2 class="subtitle">About</h2>
+                <p>Alen Joseph James is a young Architect and Entrepreneur, Currently Pursuing his Masters's in Architecture and Urban Design. He worked as an Architectural Intern in Vastu Shilpa Consultants or VSC in Ahmedabad, the multi-disciplinary practice founded in 1955 by the Pritzker laureate Balkrishna Doshi. 
+                    Noted for his Academic works in Architecture and Urbanism, <br> He has received numerous accolades, including the Council of Architecture, Gov. of India (COA) - Architecture Thesis Award, Indian Institute of Architects (IIA) - Excellence in Student Architecture, Batch Topper, and Rank Holder from Mahatma Gandhi University.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="experience">
+                        <ul>
+                            <li><span>Alen worked on the following projects during his Practical training in Sangath - Nalanda University, Rajgir. Indian Institute of Management, Visakhapatnam (Competition Project), Smritivan Earth Quake Memorial, Bhuj. The exposure had equipped him to handle Masterplanning and Designing of large-scale institutional projects. He had also practiced as an architectural intern in Design Workshop, Lonavala under Ar. Shabbir Unwala for completing his dissertation on -  An Architecture Typology for Mountain Slopes -Through Steel like Dendriform Structures. His selected academic works have been published by COA-Training Research Centre, NASA, Designer + Builder Magazine, etc.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="education">
+                        <ul>
+                            <li><span>Alen completed his Primary and Secondary education from Sacred Heart Public School Kilimala - CBSE as Subject Topper in Mathematics. Apart from academics, he performed his duty as the elected School Leader and is a Basketball player and trainer. He earned his Bachelors's Degree from Mangalam School of Architecture, Kottayam, and pursuing a Masters's of Architecture and Urban Design From the College of Engineering Trivandrum. He has also successfully conducted several Studio Tours in Sangath for students and Professionals Including SPA Delhi and an Architecture Portfolio Workshop for Holycrescent College of Architecture, Aluva.</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id ="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br></li>
+                            <li><span>3D Modelling</span><br></li>
+                            <li><span>Graphics</span><br></li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+  </script>
+</body>
+</html>
