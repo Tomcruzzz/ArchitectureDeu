@@ -5,15 +5,21 @@
    box-sizing: border-box;
 }
 body {
-    background: #080808;
+    background: #161616;
     color: #fff;
 }
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Images/home.jpg);
+    background-image: url(Images/Artboard.png);
     background-size: cover;
     background-position: center;
+}
+#header p{
+    color: #FFE6E6;
+    text-decoration: none;
+    position: relative;
+
 }
 .container{
     padding: 10px 10%;
@@ -44,7 +50,7 @@ nav ul li a::after{
     content: '';
     width: 0%;
     height: 3px;
-    background: #FF2626;
+    background: #00ADB5;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -64,11 +70,11 @@ nav ul li a:hover::after{
     color: #393E46;
 }
 .header-text h1 span{
-    color: #EEEEEE;
+    color: #00ADB5;
 }
 #about{
     padding: 80px 0;
-    color: #54585e;
+    color: #393E46;
 
 }
 .row{
@@ -106,7 +112,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #FF2626;
+    background: #00ADB5;
     position: absolute;
     left: 0;
     bottom: -8px;
