@@ -135,3 +135,13 @@ nav ul li a:hover::after{
 .tab-contents.active-tab{
     display: block;
 }
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(25opx,1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
