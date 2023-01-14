@@ -4,9 +4,15 @@
    font-family: 'Poppins', sans-serif;
    box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background: #161616;
     color: #fff;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 #header{
     width: 100%;
@@ -264,7 +270,20 @@ nav .fa{
     height: 20px;
     display: none;
 }
-
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00ADB5;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #FFE6E6;
+    text-decoration: none;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #00ADB5;
+}
 /* css for mobile */
 
 @media only screen and (max-width: 600px) {
@@ -309,7 +328,7 @@ nav .fa{
         margin-top: 40%;
     }
     .logo{
-        width: 80px;
+        width: 70px;
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
