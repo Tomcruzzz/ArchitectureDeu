@@ -259,3 +259,51 @@ nav ul li a:hover::after{
     font-weight: 300;
     margin-top: 20px;
 }
+nav .fa{
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+/* css for mobile */
+
+@media only screen and (max-width: 600px) {
+    #header{
+        background-image: url("Images/Artboardmobile.png");
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa{
+        width: 20px;
+        height: 20px;
+        display: block;
+
+    }
+    nav ul{
+        background: #393E46;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 25px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa{
+        position: absolute;
+        top: 20px;
+        left: 35px;
+        cursor: pointer;
+    }
+
+  }
