@@ -305,5 +305,34 @@ nav .fa{
         left: 35px;
         cursor: pointer;
     }
+    .header-text{
+        margin-top: 40%;
+    }
+    .logo{
+        width: 80px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 20px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .work-list{
+        grid-template-columns: 1fr;
+    }
+    .layer{
+        opacity: 70%;
+    }
+    .contact-left p{
+        font-size: 18px;
+    }
+    .social-icons a img{
+        width: 30px;
+        height: 30px;
+    }
 
   }
